@@ -6,7 +6,6 @@ import Footer from './assets/components/footer/Footer';
 import HowWeAct from './assets/components/howWeAct/HowWeAct';
 import Section1 from './assets/components/section1/Section1'
 import WhatWeDo from './assets/components/whatWeDo/WhatWeDo';
-import WhatWeOffer from './assets/components/whatWeOffer/WhatWeOffer';
 
 function App() {
 
@@ -14,7 +13,6 @@ function App() {
     <>
       <Section1 />
       <About />
-      <WhatWeOffer />
       <WhatWeDo />
       <Benefits />
       <HowWeAct />
