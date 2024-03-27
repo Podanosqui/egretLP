@@ -37,13 +37,14 @@ export default function HowWeAct() {
                             Como atuamos
                         </Typography>
                     </Stack>
-                    <Stack width="100%" mb={2} >
+                    <Stack width="100%" mb={isTablet ? 2 : 6} alignItems="center" >
                         {isTablet &&
-                            <img src={Hands} alt="Mãos Razão e Emoção" />
+                            <img style={{ width: "100%" }} src={Hands} alt="Mãos Razão e Emoção" />
                         }
                         {!isTablet &&
-                            <img src={RazaoEmocao} alt="Mãos Razão e Emoção" />
+                            <img style={{ width: "70%" }} src={RazaoEmocao} alt="Mãos Razão e Emoção" />
                         }
+
                     </Stack>
                     <Stack sx={isTablet ? { margin: "0 6rem 4rem 6rem", textAlign: "center", color: "#fff" } : { textAlign: "center", color: "#fff", margin: "1rem" }}>
                         <Typography fontSize="22px" mb={3}>É natural o empresário agir com emoção afrente da sua empresa.</Typography>
