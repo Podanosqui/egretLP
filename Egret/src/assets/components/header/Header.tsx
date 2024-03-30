@@ -99,8 +99,8 @@ export default function Header() {
                     sx={{
                         padding: "12px",
                         position: "fixed",
-                        bottom: "5%",
-                        right: "5%",
+                        bottom: "2%",
+                        right: "2%",
                         zIndex: "20",
                         bgcolor: "#07263c",
                         color: "#e0c754",
@@ -111,8 +111,24 @@ export default function Header() {
                     }}>
                     <WhatsAppIcon sx={{ fontSize: 35 }} />
                 </IconButton>
-                <IconButton onClick={(e) => handleScroll(e, 'top')}
-                    href="#top" sx={{ padding: "12px", position: "fixed", bottom: "5%", left: "5%", zIndex: "20", bgcolor: "#07263c" }}><KeyboardArrowUpIcon sx={{ fontSize: 35, color: "#e0c754" }} /></IconButton>
+                <IconButton
+                    onClick={(e) => handleScroll(e, 'top')}
+                    href="#top"
+                    sx={{
+                        padding: "12px",
+                        position: "fixed",
+                        bottom: "2%",
+                        left: "2%",
+                        zIndex: "20",
+                        bgcolor: "#07263c",
+                        color: "#e0c754",
+                        '&:hover': {
+                            color: "#07263c",
+                            bgcolor: "#e0c754"
+                        }
+                    }}>
+                    <KeyboardArrowUpIcon sx={{ fontSize: 35 }} />
+                </IconButton>
             </Stack>
         </>
     );
