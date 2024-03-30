@@ -10,6 +10,7 @@ export default function Section1() {
 
     return (
         <Stack
+            id="top"
             height={isTablet ? "80vh" : "60vh"}
             sx={{
                 backgroundImage: `url(${BackgroundS1})`,

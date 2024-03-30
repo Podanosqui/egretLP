@@ -1,5 +1,7 @@
-import { Button, Stack, useMediaQuery } from "@mui/material";
-import LogoEgretTop from "../../images/LogoEgretTop.png"
+import { Button, IconButton, Stack, useMediaQuery } from "@mui/material";
+import LogoEgretTop from "../../images/LogoEgretTop.png";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 export default function Header() {
 
@@ -89,6 +91,28 @@ export default function Header() {
                         }}
                     >Contato</Button>
                 </Stack>
+            </Stack>
+            <Stack>
+                <IconButton
+                    onClick={(e) => handleScroll(e, 'contato')}
+                    href="#contato"
+                    sx={{
+                        padding: "12px",
+                        position: "fixed",
+                        bottom: "5%",
+                        right: "5%",
+                        zIndex: "20",
+                        bgcolor: "#07263c",
+                        color: "#e0c754",
+                        '&:hover': {
+                            bgcolor: "#17980E",
+                            color: "#fff"
+                        }
+                    }}>
+                    <WhatsAppIcon sx={{ fontSize: 35 }} />
+                </IconButton>
+                <IconButton onClick={(e) => handleScroll(e, 'top')}
+                    href="#top" sx={{ padding: "12px", position: "fixed", bottom: "5%", left: "5%", zIndex: "20", bgcolor: "#07263c" }}><KeyboardArrowUpIcon sx={{ fontSize: 35, color: "#e0c754" }} /></IconButton>
             </Stack>
         </>
     );

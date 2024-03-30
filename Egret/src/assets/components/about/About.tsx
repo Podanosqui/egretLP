@@ -1,15 +1,13 @@
 import * as React from 'react';
 import Accordion, { AccordionSlots } from '@mui/material/Accordion';
 import { AccordionDetails, AccordionSummary, Stack, Typography, useMediaQuery } from "@mui/material";
-import BackgroundS2 from "../../images/BackgroundS2.png";
-import LogoEgretS2 from "../../images/LogoEgretS2.png";
+import LogoEgretS2 from "../../images/LogoEgretSimple.png";
 import Fade from '@mui/material/Fade';
 
 //Icons
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function About() {
-
 
     const isMobile = useMediaQuery('(max-width:768px)');
     const isTablet = useMediaQuery('(min-width:900px)');
@@ -21,7 +19,6 @@ export default function About() {
     const handleExpansion = () => {
         setExpanded((prevExpanded) => !prevExpanded);
     };
-    
 
     return (
         <>
@@ -31,16 +28,14 @@ export default function About() {
                 justifyContent="space-between"
                 padding="4rem 3rem"
                 sx={{
-                    backgroundImage: `url(${BackgroundS2})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    bgcolor: "#f6f6f6"
                 }}>
                 <Stack
                     // width="55%"
                     maxWidth="750px"
                 >
                     <Typography
-                        color="#fff"
+                        color="#07263c"
                         fontSize="42px"
                         fontWeight="bold"
                         sx={{
@@ -52,7 +47,7 @@ export default function About() {
                         }}
                     >Quem somos</Typography>
                     <Typography
-                        color="#fff"
+                        color="#07263c"
                         fontSize={isTablet ? "28px" : "18px"}
                         sx={{
                             margin: "4rem 0"
@@ -65,24 +60,34 @@ export default function About() {
                             slots={{ transition: Fade as AccordionSlots['transition'] }}
                             slotProps={{ transition: { timeout: 600 } }}
                             sx={{
-                                color: "#fff",
+                                padding: "0 1rem",
+                                color: "#07263c",
                                 maxWidth: "400px",
-                                background: "rgb(157,96,1)",
-                                backgroundColor: "linear-gradient(236deg, rgba(157,96,1,1) 40%, rgba(198,181,99,1) 72%)",
+                                backgroundColor: "#a87b05",
                                 '& .MuiAccordion-region': { height: expanded ? 'auto' : 0 },
                                 '& .MuiAccordionDetails-root': { display: expanded ? 'block' : 'none' },
                             }}
                         >
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
+                                expandIcon={<ExpandMoreIcon sx={{ color: "#07263c", }} />}
                             >
                                 <Typography fontSize={isMobile ? "16px" : "20px"}>O que oferecemos além do BPO?</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-                                <Typography>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                    malesuada lacus ex, sit amet blandit leo lobortis eget.
-                                </Typography>
+                                <Typography sx={{ mb: 1, textDecoration: "underline", fontWeight: "bold" }}>Expertise na área de:</Typography>
+                                <ul style={{ marginBottom: 2 }}>
+                                    <li><Typography>Plano de negócios</Typography></li>
+                                    <li><Typography>Aprovação de Crédito</Typography></li>
+                                    <li><Typography>Renegociação de dívidas</Typography></li>
+                                    <li><Typography>Planejamento tributário</Typography></li>
+                                </ul>
+                                <Typography sx={{ mt: 3, mb: 1, textDecoration: "underline", fontWeight: "bold" }}>Assessoria Jurídica:</Typography>
+                                <ul style={{ marginBottom: 2 }}>
+                                    <li><Typography>Direito Trabalhista</Typography></li>
+                                    <li><Typography>Direito Bancário</Typography></li>
+                                    <li><Typography>Direito Tributário</Typography></li>
+                                </ul>
+                                
                             </AccordionDetails>
                         </Accordion>
                 </Stack>

@@ -10,6 +10,7 @@ export default function Benefits() {
         <>
             <Stack>
                 <Stack
+                    id="vantagens"
                     direction="row"
                     width="100%"
                     justifyContent="space-between"
