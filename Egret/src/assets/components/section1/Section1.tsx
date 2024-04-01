@@ -40,7 +40,7 @@ export default function Section1() {
                         lineHeight={isTablet ? "50px" : "35px"}
                         fontSize={isTablet ? "52px" : "36px"}
                         ml={2}
-                        width={isTablet ? "600px" : "300px"}
+                        width={isTablet ? "600px" : {}}
                     >
                         sobre os números
                     </Typography>

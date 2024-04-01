@@ -60,7 +60,7 @@ export default function About() {
                             slots={{ transition: Fade as AccordionSlots['transition'] }}
                             slotProps={{ transition: { timeout: 600 } }}
                             sx={{
-                                padding: "0 1rem",
+                                padding: "0 .5rem",
                                 color: "#07263c",
                                 maxWidth: "400px",
                                 backgroundColor: "#a87b05",

@@ -47,10 +47,10 @@ export default function WhatWeDo() {
                     >
                         <Stack
                             width="40%"
-                            minWidth="300px"
+                            minWidth="270px"
                             height={isTablet ? "320px" : "400px"}
 
-                            padding="1rem 1.5rem 3rem 1.5rem"
+                            padding="1rem .5rem 3rem .5rem"
                             sx={{
                                 border: "2px solid #fff",
                                 color: "#fff",
@@ -71,9 +71,9 @@ export default function WhatWeDo() {
                         </Stack>
                         <Stack
                             width="40%"
-                            minWidth="300px"
+                            minWidth="270px"
                             height={isTablet ? "320px" : "400px"}
-                            padding="1rem 1.5rem 3rem 1.5rem"
+                            padding="1rem .5rem 3rem .5rem"
                             sx={{
                                 border: "2px solid #fff",
                                 color: "#fff",
@@ -94,9 +94,9 @@ export default function WhatWeDo() {
                         </Stack>
                         <Stack
                             width="40%"
-                            minWidth="300px"
+                            minWidth="270px"
                             height={isTablet ? "320px" : "400px"}
-                            padding="1rem 1.5rem 3rem 1.5rem"
+                            padding="1rem .5rem 3rem .5rem"
                             sx={{
                                 border: "2px solid #fff",
                                 color: "#fff",
@@ -117,9 +117,9 @@ export default function WhatWeDo() {
                         </Stack>
                         <Stack
                             width="40%"
-                            minWidth="300px"
+                            minWidth="270px"
                             height={isTablet ? "320px" : "400px"}
-                            padding="1rem 1.5rem 3rem 1.5rem"
+                            padding="1rem .5rem 3rem .5rem"
                             sx={{
                                 border: "2px solid #fff",
                                 color: "#fff",

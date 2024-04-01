@@ -23,15 +23,22 @@ export default function HowWeAct() {
                     >
                         <Typography
                             color="#fff"
-                            fontSize="42px"
+                            fontSize={isTablet ? "42px" : "32px"}
                             fontWeight="bold"
-                            sx={{
+                            sx={isTablet ? {
                                 borderLeft: "7px solid",
                                 borderImageSlice: '1',
                                 borderImageSource: "#fff",
                                 paddingLeft: "1rem",
                                 marginLeft: "-1rem",
                                 width: "350px"
+                            } : {
+                                borderLeft: "7px solid",
+                                borderImageSlice: '1',
+                                borderImageSource: "#fff",
+                                paddingLeft: "1rem",
+                                marginLeft: "-1rem",
+                                width: "250px"
                             }}
                         >
                             Como atuamos
