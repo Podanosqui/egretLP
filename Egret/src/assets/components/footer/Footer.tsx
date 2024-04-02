@@ -1,9 +1,7 @@
-import { Link, Stack, Typography, useMediaQuery } from "@mui/material";
+import { Link, Stack, Typography } from "@mui/material";
 import PlaceIcon from '@mui/icons-material/Place';
 
 export default function Footer() {
-
-    const isTablet = useMediaQuery('(min-width:900px)');
 
     return (
         <>
