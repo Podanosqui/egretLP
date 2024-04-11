@@ -71,9 +71,9 @@ export default function About() {
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon sx={{ color: "#07263c", }} />}
                             >
-                                <Typography fontSize={isMobile ? "14px" : "20px"}>O que oferecemos além do BPO?</Typography>
+                                <Typography fontWeight="bold" fontSize={isMobile ? "14px" : "20px"}>O que oferecemos além do BPO?</Typography>
                             </AccordionSummary>
-                            <AccordionDetails>
+                            <AccordionDetails sx={{ marginLeft: "12px" }}>
                                 <Typography sx={{ mb: 1, textDecoration: "underline", fontWeight: "bold" }}>Expertise na área de:</Typography>
                                 <ul style={{ marginBottom: 2 }}>
                                     <li><Typography>Plano de negócios</Typography></li>
