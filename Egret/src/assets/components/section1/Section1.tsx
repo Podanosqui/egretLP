@@ -27,7 +27,7 @@ export default function Section1() {
                     borderLeft="8px solid #fff"
                 >
                     <Typography
-                        fontSize={isTablet ? "52px" : "36px"}
+                        fontSize={isTablet ? "52px" : "28px"}
                         ml={2}
                         fontWeight="500"
                         color="#fff"
@@ -38,7 +38,7 @@ export default function Section1() {
                         color="#fff"
                         fontWeight="300"
                         lineHeight={isTablet ? "50px" : "35px"}
-                        fontSize={isTablet ? "52px" : "36px"}
+                        fontSize={isTablet ? "52px" : "28px"}
                         ml={2}
                         width={isTablet ? "600px" : {}}
                     >
@@ -48,9 +48,9 @@ export default function Section1() {
                         color="#fff"
                         fontWeight="300"
                         lineHeight={isTablet ? "50px" : "35px"}
-                        fontSize={isTablet ? "52px" : "36px"}
+                        fontSize={isTablet ? "52px" : "28px"}
                         ml={2}
-                        width={isTablet ? "600px" : "300px"}
+                        width={isTablet ? "600px" : {}}
                     >
                         do seu negócio.
                     </Typography>

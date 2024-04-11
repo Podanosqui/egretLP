@@ -13,23 +13,31 @@ export default function Benefits() {
                     id="vantagens"
                     direction="row"
                     width="100%"
-                    justifyContent="space-between"
+                    justifyContent={isTablet ? "space-between" : "center"}
                 >
                     <Stack
-                        m={7}
+                        my={7}
+                        mx={isTablet ? 7 : 0}
                         maxWidth="750px"
                     >
                         <Typography
                             color="#07263c"
-                            fontSize="28px"
+                            
                             fontWeight="bold"
-                            sx={{
+                            sx={isTablet ? {
                                 borderLeft: "7px solid",
                                 borderImageSlice: '1',
                                 borderImageSource: "#07263c",
                                 paddingLeft: "1rem",
                                 marginLeft: "-1rem",
-                                width: "300px"
+                                
+                                fontSize: "28px"
+                            } : {
+                                borderLeft: "7px solid",
+                                borderImageSlice: '1',
+                                borderImageSource: "#07263c",
+                                fontSize: "28px",
+                                paddingLeft: "1rem",
                             }}
                         >
                             Vantagens do BPO
