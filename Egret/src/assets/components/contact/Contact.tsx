@@ -20,7 +20,7 @@ export default function Contact() {
                     <Typography color="#ae7b14" fontSize={isDesktop ? 42 : 30} sx={{ borderBottomWidth: "4px", borderBottomStyle: "solid" , borderImage: "linear-gradient( to right, #9d6001, #eed96f ) 1" }}>Entre em contato conosco agora e dê o próximo passo para a excelência operacional.</Typography>
                 </Stack>
                 {isDesktop &&
-                    <Stack width="50%">
+                    <Stack width="40%">
                     <img src={WallArrow} alt="Arrow Image" />
                 </Stack>
 
@@ -116,7 +116,7 @@ export default function Contact() {
                 </Stack>
 
                 {isTablet &&
-                    <Stack width="50%">
+                    <Stack width="40%">
                         <img src={SmartphoneImage} alt="Egret Smartphone" />
                     </Stack>
                 }
