@@ -26,7 +26,7 @@ export default function About() {
                 id="sobre"
                 direction="row"
                 justifyContent="space-between"
-                padding="4rem 3rem"
+                padding={isTablet ? "4rem 3rem" : "2rem"}
                 sx={{
                     bgcolor: "#f6f6f6"
                 }}>
@@ -53,43 +53,36 @@ export default function About() {
                             margin: "4rem 0"
                         }}
                     >A Egret é uma consultoria com mais de 13 anos de experiência em apoiar empresas de diferentes segmentos no Brasil e no exterior. Trabalhamos desde a base, estabelecendo rotinas e processos que gerem um controle financeiro total, até o topo, onde as importantes decisões sobre a direção do negócio são tomadas.</Typography>
-                    
-                        <Accordion
-                            expanded={expanded}
-                            onChange={handleExpansion}
-                            slots={{ transition: Fade as AccordionSlots['transition'] }}
-                            slotProps={{ transition: { timeout: 600 } }}
-                            sx={{
-                                
-                                color: "#07263c",
-                                maxWidth: "400px",
-                                backgroundColor: "#a87b05",
-                                '& .MuiAccordion-region': { height: expanded ? 'auto' : 0 },
-                                '& .MuiAccordionDetails-root': { display: expanded ? 'block' : 'none' },
-                            }}
+
+                    <Accordion
+                        expanded={expanded}
+                        onChange={handleExpansion}
+                        slots={{ transition: Fade as AccordionSlots['transition'] }}
+                        slotProps={{ transition: { timeout: 600 } }}
+                        sx={{
+
+                            color: "#07263c",
+                            maxWidth: "400px",
+                            backgroundColor: "#a87b05",
+                            '& .MuiAccordion-region': { height: expanded ? 'auto' : 0 },
+                            '& .MuiAccordionDetails-root': { display: expanded ? 'block' : 'none' },
+                        }}
+                    >
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon sx={{ color: "#07263c", }} />}
                         >
-                            <AccordionSummary
-                                expandIcon={<ExpandMoreIcon sx={{ color: "#07263c", }} />}
-                            >
-                                <Typography fontWeight="bold" fontSize={isMobile ? "14px" : "20px"}>O que oferecemos além do BPO?</Typography>
-                            </AccordionSummary>
-                            <AccordionDetails sx={{ marginLeft: "12px" }}>
-                                <Typography sx={{ mb: 1, textDecoration: "underline", fontWeight: "bold" }}>Expertise na área de:</Typography>
-                                <ul style={{ marginBottom: 2 }}>
-                                    <li><Typography>Plano de negócios</Typography></li>
-                                    <li><Typography>Aprovação de Crédito</Typography></li>
-                                    <li><Typography>Renegociação de dívidas</Typography></li>
-                                    <li><Typography>Planejamento tributário</Typography></li>
-                                </ul>
-                                <Typography sx={{ mt: 3, mb: 1, textDecoration: "underline", fontWeight: "bold" }}>Assessoria Jurídica:</Typography>
-                                <ul style={{ marginBottom: 2 }}>
-                                    <li><Typography>Direito Trabalhista</Typography></li>
-                                    <li><Typography>Direito Bancário</Typography></li>
-                                    <li><Typography>Direito Tributário</Typography></li>
-                                </ul>
-                                
-                            </AccordionDetails>
-                        </Accordion>
+                            <Typography fontWeight="bold" fontSize={isMobile ? "14px" : "20px"}>O que oferecemos além do BPO?</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails sx={{ marginLeft: "12px" }}>
+                            <Typography sx={{ mb: 1, textDecoration: "underline", fontWeight: "bold" }}>Expertise na área de:</Typography>
+                            <ul style={{ marginBottom: 2 }}>
+                                <li><Typography>Plano de negócios</Typography></li>
+                                <li><Typography>Aprovação de Crédito</Typography></li>
+                                <li><Typography>Renegociação de dívidas</Typography></li>
+                                <li><Typography>Planejamento tributário</Typography></li>
+                            </ul>
+                        </AccordionDetails>
+                    </Accordion>
                 </Stack>
                 {isDesktop &&
                     <Stack

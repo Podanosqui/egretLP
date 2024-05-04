@@ -17,7 +17,7 @@ export default function Contact() {
         <Stack id="contato">
             <Stack direction="row" justifyContent={isDesktop ? "space-between" : "center"} alignItems="center">
                 <Stack mx={isDesktop ? 10 : 1} my={isDesktop ? "" : 5} width={isDesktop ? "700px" : "90%"}>
-                    <Typography color="#ae7b14" fontSize={isDesktop ? 42 : 30} sx={{ borderBottomWidth: "4px", borderBottomStyle: "solid" , borderImage: "linear-gradient( to right, #9d6001, #eed96f ) 1" }}>Entre em contato conosco agora e dê o próximo passo para a excelência operacional.</Typography>
+                    <Typography textAlign={isTablet ? 'left' : "center"} color="#ae7b14" fontSize={isDesktop ? 42 : 30} sx={{ borderBottomWidth: "4px", borderBottomStyle: "solid" , borderImage: "linear-gradient( to right, #9d6001, #eed96f ) 1" }}>Entre em contato conosco agora e dê o próximo passo para a excelência operacional.</Typography>
                 </Stack>
                 {isDesktop &&
                     <Stack width="40%">
