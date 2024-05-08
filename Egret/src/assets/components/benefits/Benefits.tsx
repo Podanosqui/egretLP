@@ -43,16 +43,11 @@ export default function Benefits() {
                             Vantagens do BPO
                         </Typography>
                     </Stack>
-                    {isTablet &&
-                        <Stack zIndex="10" width="40%" maxWidth="600px" >
-                            <img src={LogoEgretSimple} alt="Logo Egret" />
-                        </Stack>
-                    }
+                    
                 </Stack>
                 <Stack
                     sx={isTablet ? {
                         background: 'linear-gradient(236deg, rgba(176,121,34,1) 40%, rgba(224,199,84,1) 76%)',
-                        margin: "-20% 2rem 0 2rem",
                         padding: "6rem 6rem 3rem 6rem",
                         borderRadius: "50px 50px 0 0"
                     } : {
