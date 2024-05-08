@@ -29,6 +29,7 @@ export default function Section1() {
                     <Stack
                         borderLeft="5px solid #fff"
                         mb="3rem"
+                        maxWidth="950px"
                     >
                         <Typography
 
@@ -39,13 +40,12 @@ export default function Section1() {
                         >
                             Quer se libertar do “operacional” para poder focar naquilo que realmente
                             traz <span
-                                style={{                                    
+                                style={{
                                     marginRight: "6px",
                                     borderBottom: "5px solid",
                                     borderImageSlice: '1',
                                     borderImageSource: "linear-gradient(10deg, #9d6001, #eed96f )"
-                                }}>resultado</span>
-                            para seu bolso?
+                                }}>resultado para seu bolso?</span>
                         </Typography>
                     </Stack>
                     <Stack>
@@ -58,7 +58,7 @@ export default function Section1() {
                             ml={2}
                             width={isTablet ? "600px" : {}}
                         >
-                            Gestão e controle
+                            BPO Financeiro
                         </Typography>
                         <Typography
                             color="#fff"
