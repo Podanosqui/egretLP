@@ -11,7 +11,7 @@ export default function Section1() {
     return (
         <Stack
             id="top"
-            height={isTablet ? "80vh" : "70vh"}
+            // height={isTablet ? "80vh" : "70vh"}
             sx={{
                 backgroundImage: `url(${BackgroundS1})`,
                 backgroundSize: 'cover',
@@ -28,14 +28,24 @@ export default function Section1() {
 
                     <Stack
                         borderLeft="5px solid #fff"
+                        mb="3rem"
                     >
                         <Typography
+
                             fontSize={isTablet ? "32px" : "24px"}
                             ml={2}
-                            fontWeight="500"
+                            fontWeight="bold"
                             color="#fff"
                         >
-                            Quer se livrar do operacional?
+                            Quer se libertar do “operacional” para poder focar naquilo que realmente
+                            traz <span
+                                style={{                                    
+                                    marginRight: "6px",
+                                    borderBottom: "5px solid",
+                                    borderImageSlice: '1',
+                                    borderImageSource: "linear-gradient(10deg, #9d6001, #eed96f )"
+                                }}>resultado</span>
+                            para seu bolso?
                         </Typography>
                     </Stack>
                     <Stack>
@@ -44,7 +54,6 @@ export default function Section1() {
                         <Typography
                             color="#fff"
                             fontWeight="bold"
-                            lineHeight={isTablet ? "50px" : "35px"}
                             fontSize={isTablet ? "52px" : "28px"}
                             ml={2}
                             width={isTablet ? "600px" : {}}
@@ -54,7 +63,7 @@ export default function Section1() {
                         <Typography
                             color="#fff"
                             fontWeight="300"
-                            lineHeight={isTablet ? "50px" : "35px"}
+                            lineHeight={isTablet ? "55px" : "35px"}
                             fontSize={isTablet ? "52px" : "28px"}
                             ml={2}
                             width={isTablet ? "600px" : {}}
