@@ -1,5 +1,4 @@
 import { Stack, Typography, useMediaQuery } from "@mui/material";
-import LogoEgretSimple from "../../images/LogoEgretSimple.png";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 export default function Benefits() {
